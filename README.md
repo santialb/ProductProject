@@ -19,6 +19,7 @@ It includes functionalities for creating, updating, deleting, and retrieving pro
 - Lombok
 
 ## Project Structure
+```
 ├── HELP.md
 ├── pom.xml
 ├── src/
@@ -34,7 +35,7 @@ It includes functionalities for creating, updating, deleting, and retrieving pro
 │   └── resources/
 │       └── application.properties                     # Application configuration (e.g., database connection)
 └── target/
-
+```
 ## Endpoints
 Here are the main REST API endpoints:
 
