@@ -38,7 +38,6 @@ public class SecurityConfiguration {
         return httpSecurity.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> {
                     authorize.requestMatchers("/createnewuser").permitAll();
-
                     authorize.anyRequest().authenticated();
         }).addFilterBefore(new BasicAuthenticationFilter(authenticationManager(httpSecurity)), UsernamePasswordAuthenticationFilter.class)
                 .build();
